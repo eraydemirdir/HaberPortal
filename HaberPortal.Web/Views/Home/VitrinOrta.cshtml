@@ -1,0 +1,26 @@
+﻿@model IEnumerable<HaberPortal.Domain.DomainModel.Haber>
+@{
+    var haberSayisi = Model.Count();
+}
+<div class="slider">
+    @foreach (var haber in Model)
+    {
+        <div class="orta_resim_tutucu gizli">
+            <a href="@Url.Action("HaberDetay", new { id = haber.Id })" class="orta_resim_linki">
+                <img src="~/@haber.BuyukProfilResim" />
+                <div class="orta_link_text_bg"></div>
+                <div class="orta_link_text">
+                    @Html.Raw(haber.Baslik)
+                </div>
+            </a>
+        </div>
+    }
+</div>
+<div class="slider_nav_bar">
+    @for (int i = 0; i < haberSayisi; i++)
+    {
+        <div class="nav_bar_button">
+            <a href="#">@(i + 1)</a>
+        </div>
+    }
+</div>

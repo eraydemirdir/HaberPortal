@@ -1,0 +1,20 @@
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\bin\Debug\HaberPortal.Data.dll.config
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\bin\Debug\HaberPortal.Data.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\bin\Debug\HaberPortal.Data.pdb
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\bin\Debug\EntityFramework.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\bin\Debug\HaberPortal.Domain.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\bin\Debug\HaberPortal.Domain.pdb
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\bin\Debug\EntityFramework.xml
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\obj\Debug\HaberPortal.Data.csprojResolveAssemblyReference.cache
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\obj\Debug\HaberPortal.Data.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Data\obj\Debug\HaberPortal.Data.pdb
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\bin\Debug\HaberPortal.Data.dll.config
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\bin\Debug\HaberPortal.Data.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\bin\Debug\HaberPortal.Data.pdb
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\bin\Debug\HaberPortal.Domain.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\bin\Debug\HaberPortal.Domain.pdb
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\obj\Debug\HaberPortal.Data.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\obj\Debug\HaberPortal.Data.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Data\obj\Debug\HaberPortal.Data.pdb

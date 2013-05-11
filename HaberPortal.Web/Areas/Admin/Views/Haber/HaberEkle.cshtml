@@ -1,0 +1,69 @@
+﻿@model HaberPortal.Web.Areas.Admin.ViewModels.HaberViewModel
+@{
+    ViewBag.Title = "Haber Ekle";
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@using (Html.BeginForm("HaberEkle", "Haber", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form_container">
+        <div class="editor-label">@Html.LabelFor(model => model.Resim)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Resim, new { type = "file" })
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Resim)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Baslik)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Baslik)</div>
+        <div>@Html.ValidationMessageFor(model => model.Baslik)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Aciklama)</div>
+        <div class="editor-field">@Html.TextAreaFor(model => model.Aciklama)</div>
+        <div>@Html.ValidationMessageFor(model => model.Aciklama)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Icerik)</div>
+        <div class="editor-field">@Html.TextAreaFor(model => model.Icerik, new { @class = "featured_textarea" })
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Icerik)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.HaberTipId)</div>
+        <div class="editor-field">@Html.DropDownListFor(model => model.HaberTipId, new SelectList(Model.HaberTipleri, "Id", "Ad"), "--- Haber Tipi ---")
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.HaberTipId)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.HaberPozisyonId)</div>
+        <div class="editor-field">@Html.DropDownListFor(model => model.HaberPozisyonId, new SelectList(Model.HaberPozisyon, "Id", "Ad"), "--- Haber Pozisyon ---")
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.HaberPozisyonId)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.KullaniciId)</div>
+        <div class="editor-field">@Html.DropDownListFor(model => model.KullaniciId, new SelectList(Model.Kullanicilar, "Id", "Ad"), "--- Kullanıcı ---")
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.KullaniciId)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.KategoriId)</div>
+        <div class="editor-field">@Html.DropDownListFor(model => model.KategoriId, new SelectList(Model.Kategoriler, "Id", "Ad"), "--- Kategori ---")
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.KategoriId)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.SecilenEtiketler)</div>
+        <div class="editor-field">@Html.ListBoxFor(model => model.SecilenEtiketler, new SelectList(Model.Etiketler, "Id", "Ad"))
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.SecilenEtiketler)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Yayinda)</div>
+        <div class="editor-field">@Html.CheckBoxFor(model => model.Yayinda, new { @checked = true })
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Yayinda)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Kaynak)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Kaynak)</div>
+        <div>@Html.ValidationMessageFor(model => model.Kaynak)</div>
+
+        <div>
+            <input type="submit" value="Kaydet" class="gray_gradient" />
+        </div>
+    </div>
+}

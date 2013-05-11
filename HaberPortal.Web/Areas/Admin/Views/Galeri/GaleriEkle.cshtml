@@ -1,0 +1,32 @@
+﻿@model HaberPortal.Web.Areas.Admin.ViewModels.GaleriViewModel
+@{
+    ViewBag.Title = "Galeri Ekle";
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@using (Html.BeginForm("GaleriEkle", "Galeri", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form_container">
+        <div class="editor-label">@Html.LabelFor(model => model.Resimler)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Resimler, new { type = "file", multiple = "multiple" })
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Resimler)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Ad)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Ad)
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Ad)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.HaberId)</div>
+        <div class="editor-field">@Html.DropDownListFor(model => model.HaberId, new SelectList(Model.Haberler, "Id", "Baslik"), "--- Haber ---")
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.HaberId)</div>
+
+        <div>
+            <input type="submit" value="Kaydet" class="gray_gradient" />
+        </div>
+    </div>
+}

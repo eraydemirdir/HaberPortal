@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaberPortal.Web", "HaberPortal.Web\HaberPortal.Web.csproj", "{D49B2AD8-BBF5-42AE-A945-273094019193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaberPortal.Core", "HaberPortal.Core\HaberPortal.Core.csproj", "{BF4A53CD-40EB-4879-B58F-0EF9A564023F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaberPortal.Data", "HaberPortal.Data\HaberPortal.Data.csproj", "{058A4ABB-5615-4798-8122-2B99AE303AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaberPortal.Domain", "HaberPortal.Domain\HaberPortal.Domain.csproj", "{5A7016E9-6A32-465D-B321-B290571EF2DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D49B2AD8-BBF5-42AE-A945-273094019193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49B2AD8-BBF5-42AE-A945-273094019193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49B2AD8-BBF5-42AE-A945-273094019193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49B2AD8-BBF5-42AE-A945-273094019193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF4A53CD-40EB-4879-B58F-0EF9A564023F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4A53CD-40EB-4879-B58F-0EF9A564023F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4A53CD-40EB-4879-B58F-0EF9A564023F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4A53CD-40EB-4879-B58F-0EF9A564023F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058A4ABB-5615-4798-8122-2B99AE303AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058A4ABB-5615-4798-8122-2B99AE303AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058A4ABB-5615-4798-8122-2B99AE303AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058A4ABB-5615-4798-8122-2B99AE303AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7016E9-6A32-465D-B321-B290571EF2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7016E9-6A32-465D-B321-B290571EF2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7016E9-6A32-465D-B321-B290571EF2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7016E9-6A32-465D-B321-B290571EF2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

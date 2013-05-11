@@ -1,0 +1,87 @@
+﻿html {width:100%;text-align:center;}
+body {font-size: .85em;font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;color: #232323;background-color: #fff;width:980px;margin:0 auto;text-align:left;}
+header, footer, nav, section {display: block;}
+.gizli {display:none;}
+.gorunur {display:block;}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {border: 1px solid #ddd;padding: 0 1.4em 1.4em 1.4em;margin: 0 0 1.5em 0;}
+legend {font-size: 1.2em;font-weight: bold;}
+textarea {min-height: 75px;}
+.editor-label {margin: 1em 0 0 0;}
+.editor-field {margin: 0.5em 0 0 0;}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {color: #f00;}
+.field-validation-valid {display: none;}
+.input-validation-error {border: 1px solid #f00;background-color: #fee;}
+.validation-summary-errors {font-weight: bold;color: #f00;}
+.validation-summary-valid {display: none;}
+
+/* site iskeleti
+-----------------------------------------------------------*/
+#header {background-color:#830000;}
+#body {overflow:hidden;min-height:500px;}
+#footer {background-color:#cf0000;height:75px;}
+#banner {height:100px;line-height:100px;font-size:40px;font-weight:bold;color:#fff;padding-left:20px;}
+
+/* ana menu
+-----------------------------------------------------------*/
+
+#menu {background-color:#cf0000;}
+#menu ul{padding:0;margin:0;}
+#menu ul li{list-style:none;display:inline-block;}
+#menu ul li a,#menu ul li a:active,#menu ul li a:visited{text-decoration:none;padding:0 5px 0 5px;height:30px;line-height:30px;display:block;color:#fff;font-weight:bold;}
+#menu ul li a:hover{background-color:#ff0000;}
+
+/* ana sayfa
+-----------------------------------------------------------*/
+
+.vitrin_sol, .vitrin_orta, .vitrin_sag {height:100%;height:340px;}
+
+.vitrin {height:350px;}
+.vitrin_sol {margin:5px 0 5px 0;float:left;width:200px;}
+.vitrin_orta {margin:5px;float:left;width:530px;}
+.vitrin_sag {margin:5px 0 5px 0;float:left;width:240px;background-color:#fee;}
+
+.sol_resim_tutucu {margin-bottom:5px;overflow:hidden;}
+a.sol_resim_linki {display:block;position:relative;height:110px;}
+a.sol_resim_linki:hover {border-left:7px solid #000;}
+a.orta_resim_linki img{width:100%;height:110px;}
+a.sol_resim_linki .sol_link_text_bg {position:absolute;width:199px;height:40px;bottom:0;background-color:#000;opacity: 0.5;filter: alpha(opacity=50);}
+a.sol_resim_linki .sol_link_text{position:absolute;width:195px;bottom:0;z-index:10;padding:0 5px 0 5px;color:#fff;height:35px;overflow:hidden;font-weight:bold;}
+
+.orta_resim_tutucu {overflow:hidden;}
+a.orta_resim_linki {display:block;position:relative;height:310px;}
+a.orta_resim_linki img{width:100%;height:100%;}
+a.orta_resim_linki .orta_link_text_bg {position:absolute;width:560px;height:80px;bottom:0;background-color:#000;opacity: 0.5;filter: alpha(opacity=50);}
+a.orta_resim_linki .orta_link_text{position:absolute;width:555px;bottom:0;z-index:10;padding:0 5px 0 5px;color:#fff;height:70px;overflow:hidden;font-weight:bold;font-size:20px;}
+
+.slider {}
+.slider_nav_bar {height:30px;line-height:30px;text-align:center;background-color:#cf0000;}
+.slider_nav_bar .nav_bar_button {width:25px;float:left;border-right:1px solid #fee;}
+.slider_nav_bar .nav_bar_button a {font-weight:bold;color:#fff;display:block;width:100%;height:100%;}
+.slider_nav_bar .nav_bar_button a:hover {background-color:#ff0000;}
+.slider_nav_bar .nav_bar_button a.aktif {background-color:#ff0000;}
+
+.icerik {}
+.icerik_sol {width:760px;float:left;padding:5px 0 5px 5px;}
+.icerik_sag {width:200px;float:left;padding:5px 5px 5px 0;}
+
+.haber_detay {margin:5px 0 10px 0;overflow:hidden;}
+.haber_detay .haber_detay_icerik{width:620px;float:left;background-color:#fee;}
+.haber_detay .haber_detay_icerik .haber {margin:10px 15px 10px 15px;}
+.haber_detay .haber_detay_sag_menu{width:354px;float:right;min-height:500px;background-color:#fee;}
+
+.detay_baslik {font-weight:bold;font-size:17px;color: #333;padding: 10px 5px 10px 0;border-bottom:1px solid #999;margin-bottom:15px;}
+.detay_resim {margin: 10px 0 20px;}
+.detay_resim img {width:100%; height:300px;}
+.detay_tarih {margin-bottom:20px;font-size:11px;color:#999;}
+.detay_aciklama {margin-bottom:20px;}
+.detay_icerik {}
+.detay_icerik p{margin-bottom:20px;font-size:13px;line-height:18px;}
+
+
+

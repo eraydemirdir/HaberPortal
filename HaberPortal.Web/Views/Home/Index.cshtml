@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script src="@Url.Content("~/Scripts/AnaSayfa.js")"></script>
+<div class="vitrin">
+    <div class="vitrin_sol">
+        @Html.Action("VitrinSol")
+    </div>
+    <div class="vitrin_orta">
+        @Html.Action("VitrinOrta")
+    </div>
+    <div class="vitrin_sag">
+        @Html.Action("VitrinSag")
+    </div>
+</div>
+<div class="icerik">
+    <div class="icerik_sol"></div>
+    <div class="icerik_sag"></div>
+</div>

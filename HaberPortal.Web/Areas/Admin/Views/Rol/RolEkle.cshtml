@@ -1,0 +1,22 @@
+﻿@model HaberPortal.Domain.DomainModel.Rol
+@{
+    ViewBag.Title = "Rol Ekle";
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@using (Html.BeginForm())
+{
+    <div class="form_container">
+        <div class="editor-label">@Html.LabelFor(model => model.Ad)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Ad)
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Ad)</div>
+
+        <div>
+            <input type="submit" value="Kaydet" class="gray_gradient" />
+        </div>
+    </div>
+}

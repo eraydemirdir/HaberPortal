@@ -1,0 +1,90 @@
+﻿html {width:100%;}
+body {font-size: .85em;font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;color: #232323;background-color: #fff;}
+header, footer, nav, section {display: block;}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {border: 1px solid #ddd;padding: 0 1.4em 1.4em 1.4em;margin: 0 0 1.5em 0;}
+legend {font-size: 1.2em;font-weight: bold;}
+textarea {min-height: 75px;}
+.editor-label {margin: 5px 0 0 5px;}
+.editor-field {margin: 5px 0 0 0;}
+.display-label {font-weight:bold;margin: 5px 0;}
+.display-field {margin: 5px 0;}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {color: #f00;}
+.field-validation-valid {display: none;}
+.input-validation-error {border: 1px solid #f00;background-color: #fee;}
+.validation-summary-errors {font-weight: bold;color: #f00;}
+.validation-summary-valid {display: none;}
+
+/* site iskeleti
+-----------------------------------------------------------*/
+#header {background-color:#f00;}
+#body {overflow:hidden;}
+#content {float:left;padding:5px;}
+#footer {background-color:#ff6a00;height:50px;}
+#banner {height:50px;}
+.detay_gorunum {float: left;width:700px;}
+
+/* ana menu
+-----------------------------------------------------------*/
+
+#menu {width:200px;float:left;}
+#menu ul{border-right:1px solid #999;}
+#menu ul li{list-style:none;border-bottom:1px solid #666;}
+#menu ul li a{height:30px;line-height:30px;display:block;padding:0 0 0 10px;}
+#menu ul li a:hover{background-color:#ddd;}
+
+/* form elements
+-----------------------------------------------------------*/
+
+.form_container {padding:10px;}
+.form_container input, .form_container textarea, .form_container select {padding:5px;}
+.form_container input[type=text]{width:600px;}
+.form_container input[type=button], .form_container input[type=submit] {width:614px;margin:10px 0;}
+.form_container textarea{width:600px;height:150px;}
+.form_container select{width:612px;}
+.form_container textarea.textarea_buyuk {height:300px;}
+
+
+/* grid ayarları
+-----------------------------------------------------------*/
+
+.haber_grid_resim {width:150px;height:100px;}
+a.grid_buton {display:block;width:50px;text-align:center;border:1px solid #ccc;padding:5px;font-weight:bold;}
+a.grid_buton:hover {background-color:#999;color:#fff;}
+.aktif {background-color:green;color:#fff !important;}
+.pasif {background-color:red;color:#fff !important;}
+
+/* özellikli butonlar
+-----------------------------------------------------------*/
+
+.gray_gradient {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+	background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+	background-color:#f9f9f9;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.gray_gradient:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+	background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+	background-color:#e9e9e9;
+}.gray_gradient:active {
+	position:relative;
+	top:1px;
+}

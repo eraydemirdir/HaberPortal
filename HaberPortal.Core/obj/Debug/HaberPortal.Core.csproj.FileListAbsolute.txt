@@ -1,0 +1,24 @@
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\HaberPortal.Core.dll.config
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\HaberPortal.Core.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\HaberPortal.Core.pdb
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\EntityFramework.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\HaberPortal.Data.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\HaberPortal.Domain.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\HaberPortal.Data.pdb
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\HaberPortal.Domain.pdb
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\bin\Debug\EntityFramework.xml
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\obj\Debug\HaberPortal.Core.csprojResolveAssemblyReference.cache
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\obj\Debug\HaberPortal.Core.dll
+C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Core\obj\Debug\HaberPortal.Core.pdb
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\HaberPortal.Core.dll.config
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\HaberPortal.Core.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\HaberPortal.Core.pdb
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\HaberPortal.Data.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\HaberPortal.Domain.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\HaberPortal.Data.pdb
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\HaberPortal.Domain.pdb
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\obj\Debug\HaberPortal.Core.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\obj\Debug\HaberPortal.Core.dll
+C:\Users\Acer\Desktop\HaberPortal-master\HaberPortal.Core\obj\Debug\HaberPortal.Core.pdb

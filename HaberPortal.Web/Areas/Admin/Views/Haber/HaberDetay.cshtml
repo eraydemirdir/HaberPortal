@@ -1,0 +1,108 @@
+﻿@model HaberPortal.Domain.DomainModel.Haber
+
+@{
+    ViewBag.Title = "HaberDetay";
+}
+<div class="detay_gorunum">
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Baslik)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Baslik)
+    </div>
+    <div class="display-label">
+        Haber Resim
+    </div>
+    <div class="display-field">
+        <img src="~/@Model.BuyukProfilResim" width="500" height="250" />
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Aciklama)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Aciklama)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Icerik)
+    </div>
+    <div class="display-field">
+        @Html.Raw(Model.Icerik)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.TumEtiketler)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TumEtiketler)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.OlusturmaTarihi)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OlusturmaTarihi)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.DegistirmeTarihi)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DegistirmeTarihi)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.YayinlanmaTarihi)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.YayinlanmaTarihi)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.OkunmaSayisi)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OkunmaSayisi)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.YorumSayisi)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.YorumSayisi)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Kaynak)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kaynak)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Yayinda)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Yayinda)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.HaberTipi.Ad)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HaberTipi.Ad)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Kullanici.Ad)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kullanici.Ad)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Kategori.Ad)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kategori.Ad)
+    </div>
+</div>

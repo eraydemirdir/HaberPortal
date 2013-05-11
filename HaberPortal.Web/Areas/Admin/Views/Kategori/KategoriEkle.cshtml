@@ -1,0 +1,28 @@
+﻿@model HaberPortal.Domain.DomainModel.Kategori
+@{
+    ViewBag.Title = "Kategori Ekle";
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <div class="form_container">
+        <div class="editor-label">@Html.LabelFor(model => model.Ad)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Ad)
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Ad)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Aciklama)</div>
+        <div class="editor-field">@Html.TextAreaFor(model => model.Aciklama)
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Aciklama)</div>
+
+        <div>
+            <input type="submit" value="Kaydet" class="gray_gradient" />
+        </div>
+    </div>
+}

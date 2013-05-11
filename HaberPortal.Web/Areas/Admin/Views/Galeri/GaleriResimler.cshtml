@@ -1,0 +1,17 @@
+﻿@model HaberPortal.Domain.DomainModel.Galeri
+
+@{
+    ViewBag.Title = "GaleriResimler";
+}
+
+
+<div class="form_container">
+    <div class="display-label">@Html.DropDownList("Galeriler")</div>
+    <div class="display-label">
+        @foreach (var resim in Model.Resimler)
+        {
+            <img src="~/@resim.KucukResim" width="150" height="100" />
+        }
+    </div>
+</div>
+
