@@ -875,6 +875,7 @@
     <Content Include="Views\Home\VitrinOrta.cshtml" />
     <Content Include="Views\Home\VitrinSag.cshtml" />
     <Content Include="Views\Home\HaberDetay.cshtml" />
+    <Content Include="Views\Home\KoseYazisiDetay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

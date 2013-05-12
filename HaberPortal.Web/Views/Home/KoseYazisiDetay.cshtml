@@ -1,0 +1,35 @@
+﻿@model HaberPortal.Domain.DomainModel.Haber
+@{
+    ViewBag.Title = Model.Baslik;
+}
+
+<div class="haber_detay">
+    <div class="haber_detay_icerik">
+        <div class="yazar_detay">
+            <div class="yazar_detay_resim">
+                <img src="~/@Model.Kullanici.KucukProfilResim" />
+            </div>
+            <div class="yazar_detay_ad">
+                <div>@Html.Raw(Model.Kullanici.Ad)</div>
+                <div class="yazar_detay_eposta">@Html.Raw(Model.Kullanici.Eposta)</div>
+            </div>
+        </div>
+        <div class="haber">
+            <div class="detay_baslik">
+                @Html.DisplayFor(model => model.Baslik)
+            </div>
+            <div class="detay_tarih">
+                @Html.Label("Yayınlanma Tarihi") : 
+                @Model.YayinlanmaTarihi.Value.ToString("d MMMM yyyy - HH:mm")
+            </div>
+            <div class="detay_aciklama">
+                @Html.DisplayFor(model => model.Aciklama)
+            </div>
+            <div class="detay_icerik">
+                @Html.Raw(Model.Icerik)
+            </div>
+        </div>
+    </div>
+    <div class="haber_detay_sag_menu">
+    </div>
+</div>

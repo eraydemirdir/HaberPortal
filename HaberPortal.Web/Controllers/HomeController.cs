@@ -30,6 +30,12 @@ namespace HaberPortal.Web.Controllers
             return View(haber);
         }
 
+        public ActionResult KoseYazisiDetay(int id)
+        {
+            var haber = haberServis.HaberBul(id);
+            return View(haber);
+        }
+
         public ActionResult VitrinSol()
         {
             // pozisyon id = 3 olan haberler solda görünür
@@ -55,7 +61,7 @@ namespace HaberPortal.Web.Controllers
         public ActionResult VitrinSag()
         {
             // pozisyon id = 3 olan haberler sagda (köşe yazıları) görünür
-            var haberler = haberServis.HaberlerPozisyonaGore(5)
+            var haberler = haberServis.HaberlerPozisyonaGore(3)
                 .OrderByDescending(x => x.OlusturmaTarihi)
                 .Where(x => x.Yayinda)
                 .Take(5);

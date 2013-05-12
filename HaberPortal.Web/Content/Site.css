@@ -3,6 +3,7 @@ body {font-size: .85em;font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;c
 header, footer, nav, section {display: block;}
 .gizli {display:none;}
 .gorunur {display:block;}
+.temizle {clear:both;}
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
@@ -44,7 +45,7 @@ textarea {min-height: 75px;}
 .vitrin {height:350px;}
 .vitrin_sol {margin:5px 0 5px 0;float:left;width:200px;}
 .vitrin_orta {margin:5px;float:left;width:530px;}
-.vitrin_sag {margin:5px 0 5px 0;float:left;width:240px;background-color:#fee;}
+.vitrin_sag {margin:5px 0 5px 0;float:left;width:240px;}
 
 .sol_resim_tutucu {margin-bottom:5px;overflow:hidden;}
 a.sol_resim_linki {display:block;position:relative;height:110px;}
@@ -58,6 +59,15 @@ a.orta_resim_linki {display:block;position:relative;height:310px;}
 a.orta_resim_linki img{width:100%;height:100%;}
 a.orta_resim_linki .orta_link_text_bg {position:absolute;width:560px;height:80px;bottom:0;background-color:#000;opacity: 0.5;filter: alpha(opacity=50);}
 a.orta_resim_linki .orta_link_text{position:absolute;width:555px;bottom:0;z-index:10;padding:0 5px 0 5px;color:#fff;height:70px;overflow:hidden;font-weight:bold;font-size:20px;}
+
+.yazarlar {}
+.sag_resim_tutucu {height:50px;border-bottom:1px solid #ccc;padding:8px 5px 9px 5px;background-color:#333;}
+.sag_resim_linki {text-align:right;}
+.sag_link_text {float:left;width:175px;height:50px;}
+.sag_link_text .yazar_adi{font-size:11px;font-weight:bold;color:#ccc;}
+.sag_link_text .haber_baslik{font-size:11px;font-weight:bold;color:#fff;}
+.yazar_resim {float:right;width:55px;}
+.yazar_resim img {height:50px;width:50px;}
 
 .slider {}
 .slider_nav_bar {height:30px;line-height:30px;text-align:center;background-color:#cf0000;}
@@ -82,6 +92,12 @@ a.orta_resim_linki .orta_link_text{position:absolute;width:555px;bottom:0;z-inde
 .detay_aciklama {margin-bottom:20px;}
 .detay_icerik {}
 .detay_icerik p{margin-bottom:20px;font-size:13px;line-height:18px;}
+
+.yazar_detay {overflow:hidden;padding:10px;}
+.yazar_detay .yazar_detay_resim {float:left;}
+.yazar_detay .yazar_detay_resim img {width:100px;height:100px;}
+.yazar_detay .yazar_detay_ad{float:left;padding:10px;font-weight:bold;}
+.yazar_detay .yazar_detay_eposta {padding:10px 0 10px 0;font-weight:normal;font-size:12px;}
 
 
 

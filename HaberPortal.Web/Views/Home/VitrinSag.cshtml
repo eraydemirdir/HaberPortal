@@ -1,1 +1,22 @@
-﻿vitrin sag
+﻿@model IEnumerable<HaberPortal.Domain.DomainModel.Haber>
+
+<div class="yazarlar">
+    @foreach (var haber in Model)
+    {
+        <div class="sag_resim_tutucu">
+            <a href="@Url.Action("KoseYazisiDetay", new { id = haber.Id })" class="sag_resim_linki">
+                <div class="sag_link_text">
+                    <div class="yazar_adi">
+                        @Html.Raw(haber.Kullanici.Ad)
+                    </div>
+                    <div class="haber_baslik">
+                        @Html.Raw(haber.Baslik)
+                    </div>
+                </div>
+                <div class="yazar_resim">
+                    <img src="~/@haber.Kullanici.KucukProfilResim" />
+                </div>
+            </a>
+        </div>
+    }
+</div>
