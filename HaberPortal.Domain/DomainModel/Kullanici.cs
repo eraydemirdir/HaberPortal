@@ -14,31 +14,19 @@ namespace HaberPortal.Domain.DomainModel
             this.Yorumlar = new HashSet<Yorum>();
         }
 
-        [ScaffoldColumn(false)]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "{0} alanı gereklidir.")]
-        [StringLength(50, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.")]
-        [Display(Name = "Kullanıcı Adı")]
+        [StringLength(50)]
         public string Ad { get; set; }
 
-        [Required(ErrorMessage = "{0} alanı gereklidir.")]
-        [StringLength(50, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.")]
-        [Display(Name = "Şifre")]
+        [StringLength(50)]
         public string Sifre { get; set; }
 
-        [Required(ErrorMessage = "{0} alanı gereklidir.")]
-        [StringLength(150, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.")]
-        [Display(Name = "Eposta")]
+        [StringLength(150)]
         public string Eposta { get; set; }
 
-        [ScaffoldColumn(false)]
         public string OrjinalProfilResim { get; set; }
-
-        [ScaffoldColumn(false)]
         public string KucukProfilResim { get; set; }
-
-        [ScaffoldColumn(false)]
         public Nullable<DateTime> KayitTarihi { get; set; }
 
         public virtual ICollection<Rol> Roller { get; set; }

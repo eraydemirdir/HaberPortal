@@ -1,0 +1,41 @@
+﻿﻿@model HaberPortal.Web.Areas.Admin.ViewModels.KullaniciViewModel
+@{
+    ViewBag.Title = "Kullanıcı Düzenle";
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@using (Html.BeginForm("KullaniciDuzenle", "Kullanici", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form_container">
+        <div class="editor-label">@Html.LabelFor(model => model.KucukResim)</div>
+        <div class="editor-field"><img src="~/@Model.KucukResim" width="100" height="150" /></div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Resim)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Resim, new { type = "file" })
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Resim)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Ad)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Ad)
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Ad)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Sifre)</div>
+        <div class="editor-field">@Html.PasswordFor(model => model.Sifre)
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Sifre)</div>
+
+        <div class="editor-label">@Html.LabelFor(model => model.Eposta)</div>
+        <div class="editor-field">@Html.TextBoxFor(model => model.Eposta)
+        </div>
+        <div>@Html.ValidationMessageFor(model => model.Eposta)</div>
+
+        <div>
+            @Html.HiddenFor(model => model.Id)
+            <input type="submit" value="Kaydet" class="gray_gradient" />
+        </div>
+    </div>
+}

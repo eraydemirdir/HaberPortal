@@ -57,6 +57,15 @@
         }
     }];
 
+    // kullanici grid toolbar
+    //--------------------------------------------------------------------------
+    var kullanici_grid_toolbar = [{
+        text: 'Yeni Kayıt',
+        iconCls: 'icon-add',
+        handler: function () {
+            window.location = app_root + 'Admin/Kullanici/KullaniciEkle';
+        }
+    }];
 
     // haberler grid
     //--------------------------------------------------------------------------
@@ -216,21 +225,23 @@
         autoRowHeight: false,
         fitColumns: true,
         pageSize: 50,
+        toolbar: kullanici_grid_toolbar,
         url: app_root + 'Admin/Kullanici/KullanicilarJson',
         columns: [[
             { field: 'Id', title: 'Id', width: 30, sortable: true },
             { field: 'Ad', title: 'Ad', width: 150, sortable: true },
-            { field: 'Eposta', title: 'Eposta', sortable: true }
-            //{
-            //    field: 'Duzenle', title: 'Düzenle', formatter: function (value, row, index) {
-            //        return '<a href="' + app_root + 'Admin/Etiket/EtiketDuzenle?id=' + row.Id + '" class="grid_buton">Düzenle</a>';
-            //    }
-            //},
-            //    {
-            //        field: 'Sil', title: 'Sil', formatter: function (value, row, index) {
-            //            return '<a href="' + app_root + 'Admin/Etiket/EtiketSil?id=' + row.Id + '" class="grid_buton" onclick="return confirm(\'Silmek istediğinize emin misiniz?\')">Sil</a>';
-            //        }
-            //    }
+            { field: 'Eposta', title: 'Eposta', sortable: true },
+            { field: 'Eposta', title: 'Eposta', sortable: true },
+            {
+                field: 'Duzenle', title: 'Düzenle', formatter: function (value, row, index) {
+                    return '<a href="' + app_root + 'Admin/Kullanici/KullaniciDuzenle?id=' + row.Id + '" class="grid_buton">Düzenle</a>';
+                }
+            },
+                {
+                    field: 'Sil', title: 'Sil', formatter: function (value, row, index) {
+                        return '<a href="' + app_root + 'Admin/Kullanici/KullaniciSil?id=' + row.Id + '" class="grid_buton" onclick="return confirm(\'Silmek istediğinize emin misiniz?\')">Sil</a>';
+                    }
+                }
         ]]
     });
 
@@ -246,7 +257,7 @@
         autoRowHeight: false,
         fitColumns: true,
         pageSize: 50,
-        toolbar:rol_grid_toolbar,
+        toolbar: rol_grid_toolbar,
         url: app_root + 'Admin/Rol/RollerJson',
         columns: [[
             { field: 'Id', title: 'Id', width: 30, sortable: true },
