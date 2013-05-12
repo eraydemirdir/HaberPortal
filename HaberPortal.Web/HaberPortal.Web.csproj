@@ -144,7 +144,6 @@
     <Compile Include="Areas\Admin\Controllers\YorumController.cs" />
     <Compile Include="Areas\Admin\ViewModels\GaleriViewModel.cs" />
     <Compile Include="Areas\Admin\ViewModels\HaberViewModel.cs" />
-    <Compile Include="Areas\Admin\ViewModels\KullaniciViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UyelikController.cs" />
     <Compile Include="CustomAttributes\ValidateFileAttribute.cs" />
@@ -369,8 +368,6 @@
     <Content Include="Areas\Admin\Views\Rol\RolEkle.cshtml" />
     <Content Include="Areas\Admin\Views\Rol\RolDuzenle.cshtml" />
     <Content Include="Areas\Admin\Views\Yorum\Yorumlar.cshtml" />
-    <Content Include="Areas\Admin\Views\Kullanici\KullaniciEkle.cshtml" />
-    <Content Include="Areas\Admin\Views\Kullanici\KullaniciDuzenle.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Areas\Admin\Scripts\Admin\Admin.js" />
     <Content Include="Content\JqueryEasyUi.1.3.2\changelog.txt" />

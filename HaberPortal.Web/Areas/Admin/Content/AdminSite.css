@@ -43,7 +43,7 @@ textarea {min-height: 75px;}
 
 .form_container {padding:10px;}
 .form_container input, .form_container textarea, .form_container select {padding:5px;}
-.form_container input[type=text],.form_container input[type=password]{width:600px;}
+.form_container input[type=text]{width:600px;}
 .form_container input[type=button], .form_container input[type=submit] {width:614px;margin:10px 0;}
 .form_container textarea{width:600px;height:150px;}
 .form_container select{width:612px;}

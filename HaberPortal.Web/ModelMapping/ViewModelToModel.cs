@@ -36,14 +36,5 @@ namespace HaberPortal.Web.ModelMapping
 
             return galeri;
         }
-
-        public static Kullanici KullaniciViewModelToKullanici(KullaniciViewModel model, Kullanici kullanici)
-        {
-            kullanici.Ad = model.Ad;
-            kullanici.Eposta = model.Eposta;
-            kullanici.Sifre = model.Sifre;
-
-            return kullanici;
-        }
     }
 }

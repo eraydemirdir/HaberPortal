@@ -182,6 +182,7 @@ namespace HaberPortal.Web.Areas.Admin.Controllers
 
                 haber.DegistirmeTarihi = DateTime.Now;
                 haber.OkunmaSayisi = 0;
+                haber.OlusturmaTarihi = DateTime.Now;
                 haber.YayinlanmaTarihi = DateTime.Now;
                 haber.YorumSayisi = 0;
                 haber.TumEtiketler = string.Join(", ", etiketler.Select(x => x.Ad));
