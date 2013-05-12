@@ -3,3 +3,8 @@ C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Domain
 C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Domain\obj\Debug\HaberPortal.Domain.dll
 C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Domain\obj\Debug\HaberPortal.Domain.pdb
 C:\Users\Acer\documents\visual studio 11\Projects\HaberPortal\HaberPortal.Domain\obj\Debug\HaberPortal.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\HaberPortal\HaberPortal.Domain\bin\Debug\HaberPortal.Domain.dll
+C:\Users\Acer\Documents\GitHub\HaberPortal\HaberPortal.Domain\bin\Debug\HaberPortal.Domain.pdb
+C:\Users\Acer\Documents\GitHub\HaberPortal\HaberPortal.Domain\obj\Debug\HaberPortal.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\HaberPortal\HaberPortal.Domain\obj\Debug\HaberPortal.Domain.dll
+C:\Users\Acer\Documents\GitHub\HaberPortal\HaberPortal.Domain\obj\Debug\HaberPortal.Domain.pdb

@@ -39,5 +39,18 @@ namespace HaberPortal.Web.ModelMapping
 
             return model;
         }
+
+        public static KullaniciViewModel KullaniciToKullaniciViewModel(Kullanici kullanici)
+        {
+            KullaniciViewModel model = new KullaniciViewModel();
+
+            model.Ad = kullanici.Ad;
+            model.Eposta = kullanici.Eposta;
+            model.Id = kullanici.Id;
+            model.KucukResim = kullanici.KucukProfilResim;
+            model.Sifre = kullanici.Sifre;
+
+            return model;
+        }
     }
 }
