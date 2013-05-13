@@ -12,6 +12,7 @@ namespace HaberPortal.Domain.DomainModel
             this.Haberler = new HashSet<Haber>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
         [StringLength(50)]

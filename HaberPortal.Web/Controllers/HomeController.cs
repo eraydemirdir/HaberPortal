@@ -9,11 +9,13 @@ namespace HaberPortal.Web.Controllers
     {
         private HaberPortalDbContext db;
         private HaberServis haberServis;
+        private KategoriServis kategoriServis;
 
         public HomeController()
         {
             this.db = new HaberPortalDbContext();
             this.haberServis = new HaberServis(db);
+            this.kategoriServis = new KategoriServis(db);
         }
 
         //
@@ -69,5 +71,13 @@ namespace HaberPortal.Web.Controllers
             return PartialView(haberler);
         }
 
+        public ActionResult KategoriHaberler()
+        {
+            var kategoriler = kategoriServis.Kategoriler()
+                .Where(x => x.AnaSayfa)
+                .OrderBy(x => x.SiraNo);
+
+            return PartialView(kategoriler);
+        }
     }
 }

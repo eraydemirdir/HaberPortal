@@ -12,7 +12,6 @@ namespace HaberPortal.Domain.DomainModel
             this.Haberler = new HashSet<Haber>();
         }
 
-        [ScaffoldColumn(false)]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "{0} alanı gereklidir.")]
@@ -22,6 +21,10 @@ namespace HaberPortal.Domain.DomainModel
 
         [StringLength(250, ErrorMessage = "En fazla {1} karakter uzunluğunda olmalıdır.")]
         public string Aciklama { get; set; }
+
+        public bool AnaSayfa { get; set; }
+        public bool AnaMenu { get; set; }
+        public int SiraNo { get; set; }
 
         public virtual ICollection<Haber> Haberler { get; set; }
     }
