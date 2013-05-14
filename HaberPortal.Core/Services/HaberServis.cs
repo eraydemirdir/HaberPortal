@@ -52,6 +52,7 @@ namespace HaberPortal.Core.Services
         {
             var haber = db.Haber.Find(id);
             haber.Yayinda = !durum;
+            haber.YayinlanmaTarihi = DateTime.Now;
             db.SaveChanges();
         }
 
@@ -102,6 +103,13 @@ namespace HaberPortal.Core.Services
         public IEnumerable<HaberPozisyon> HaberPozisyonlari()
         {
             return db.HaberPozisyon;
+        }
+
+        public void OkunmaSayisiArtir(Haber haber)
+        {
+            haber.OkunmaSayisi++;
+            db.Entry(haber).State = EntityState.Modified;
+            db.SaveChanges();
         }
     }
 }

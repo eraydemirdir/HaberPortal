@@ -80,12 +80,12 @@ a.orta_resim_linki .orta_link_text{position:absolute;width:555px;bottom:0;z-inde
 .icerik_sol {width:735px;float:left;}
 .icerik_sag {width:240px;float:right;}
 
-.haber_detay {margin:5px 0 10px 0;overflow:hidden;}
-.haber_detay .haber_detay_icerik{width:620px;float:left;background-color:#fee;}
+.haber_detay {margin:5px 0 10px 0;overflow:hidden;color:#fff;}
+.haber_detay .haber_detay_icerik{width:620px;float:left;background-color:#333;}
 .haber_detay .haber_detay_icerik .haber {margin:10px 15px 10px 15px;}
-.haber_detay .haber_detay_sag_menu{width:354px;float:right;min-height:500px;background-color:#fee;}
+.haber_detay .haber_detay_sag_menu{width:354px;float:right;min-height:500px;background-color:#333;}
 
-.detay_baslik {font-weight:bold;font-size:17px;color: #333;padding: 10px 5px 10px 0;border-bottom:1px solid #999;margin-bottom:15px;}
+.detay_baslik {font-weight:bold;font-size:17px;padding: 10px 5px 10px 0;border-bottom:1px solid #999;margin-bottom:15px;}
 .detay_resim {margin: 10px 0 20px;}
 .detay_resim img {width:100%; height:300px;}
 .detay_tarih {margin-bottom:20px;font-size:11px;color:#999;}
@@ -100,7 +100,7 @@ a.orta_resim_linki .orta_link_text{position:absolute;width:555px;bottom:0;z-inde
 .yazar_detay .yazar_detay_eposta {padding:10px 0 10px 0;font-weight:normal;font-size:12px;}
 
 .icerik_sol .kategori_haberler {overflow:hidden;color:#fff;}
-.icerik_sol .kategori_haberler .kategoriler{clear:both;min-height:200px;overflow:hidden;margin:0 0 10px 0;background-color:#333;padding-bottom:10px;}
+.icerik_sol .kategori_haberler .kategoriler{clear:both;min-height:200px;overflow:hidden;margin:0 0 5px 0;background-color:#333;padding-bottom:10px;}
 .icerik_sol .kategori_haberler .kategoriler .kategroi_ad{padding:15px 20px 10px 10px;font-weight:bold;border-bottom:1px solid #ccc;margin:0 10px 0 10px;}
 .icerik_sol .kategori_haberler .kategoriler .haber{width:170px;float:left;padding:10px 0 10px 10px;}
 a.kategori_haber_link{display:block;color:#fff;font-size:12px;font-weight:bold;}
@@ -108,4 +108,10 @@ a.kategori_haber_link img {width:100%;height:100px;border:1px solid #fff;}
 a.kategori_haber_link .haber_baslik {padding:5px 0 5px 0;line-height:14px;color:#ccc;}
 a.kategori_haber_link .haber_aciklama {padding:0 0 5px 0;height:70px;overflow:hidden;font-weight:normal;line-height:15px;}
 
-
+.en_cok_okunanlar {background-color:#333;}
+.en_cok_okunanlar .en_cok_okunan_baslik {color:#fff;padding: 15px 10px 10px 5px;font-weight: bold;border-bottom: 1px solid #ccc;margin: 0 5px 0 5px;}
+.en_cok_okunanlar .en_cok_okunan_haber {overflow:hidden;padding:5px;border-bottom:1px solid #ccc;}
+.en_cok_okunanlar .en_cok_okunan_link {color:#fff;font-weight:bold;font-size:12px;display:block;}
+.en_cok_okunanlar .en_cok_okunan_resim {float:left;}
+.en_cok_okunanlar .en_cok_okunan_resim  img{width:90px;height:70px;}
+.en_cok_okunanlar .en_cok_okunan_haber_baslik {float:right;width:130px;overflow:hidden;}

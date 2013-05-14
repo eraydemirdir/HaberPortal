@@ -29,12 +29,16 @@ namespace HaberPortal.Web.Controllers
         public ActionResult HaberDetay(int id)
         {
             var haber = haberServis.HaberBul(id);
+            haberServis.OkunmaSayisiArtir(haber);
+
             return View(haber);
         }
 
         public ActionResult KoseYazisiDetay(int id)
         {
             var haber = haberServis.HaberBul(id);
+            haberServis.OkunmaSayisiArtir(haber);
+
             return View(haber);
         }
 
@@ -78,6 +82,16 @@ namespace HaberPortal.Web.Controllers
                 .OrderBy(x => x.SiraNo);
 
             return PartialView(kategoriler);
+        }
+
+        public ActionResult EnCokOkunanHaberler()
+        {
+            var haberler = haberServis.Haberler(1)
+                .OrderByDescending(x => x.OkunmaSayisi)
+                .Where(x => x.Yayinda)
+                .Take(10);
+
+            return PartialView(haberler);
         }
     }
 }

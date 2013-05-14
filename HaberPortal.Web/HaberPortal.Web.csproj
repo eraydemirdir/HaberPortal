@@ -877,6 +877,7 @@
     <Content Include="Views\Home\HaberDetay.cshtml" />
     <Content Include="Views\Home\KoseYazisiDetay.cshtml" />
     <Content Include="Views\Home\KategoriHaberler.cshtml" />
+    <Content Include="Views\Home\EnCokOkunanHaberler.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
