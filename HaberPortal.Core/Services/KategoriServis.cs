@@ -65,5 +65,10 @@ namespace HaberPortal.Core.Services
         }
 
 
+
+        public Kategori KategoriBul(int id)
+        {
+            return db.Kategori.Find(id);
+        }
     }
 }

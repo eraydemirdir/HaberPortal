@@ -63,12 +63,11 @@ namespace HaberPortal.Data.Context
             context.HaberTipi.Add(new HaberTipi { Ad = "Köşe Yazısı" });
 
             // haber posizyonları
-            context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Vitrin Orta", Id = 1 });
+            context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Vitrin Orta - Slider", Id = 1 });
             context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Vitrin Sol", Id = 2 });
-            context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Vitrin Sağ", Id = 3 });
+            context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Vitrin Sağ - Köşe Yazısı", Id = 3 });
             context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Son Dakika", Id = 4 });
-            context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Köşe Yazısı", Id = 5 });
-            context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Standart", Id = 6 });
+            context.HaberPozisyon.Add(new HaberPozisyon { Ad = "Standart", Id = 5 });
 
             // kategoriler
             context.Kategori.Add(new Kategori { Ad = "Gündem" });
