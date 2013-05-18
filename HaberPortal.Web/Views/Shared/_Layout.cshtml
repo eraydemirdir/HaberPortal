@@ -12,24 +12,10 @@
 <body>
     <header id="header">
         <div id="banner">
-            Haber Portal
+            @Html.ActionLink("HABER PORTAL", "Index")
         </div>
         <nav id="menu">
-            <ul>
-                <li>@Html.ActionLink("Admin", "Index", "Home", new { area = "Admin" }, null)</li>
-                <li>@Html.ActionLink("ANA SAYFA", "Index")</li>
-                <li>@Html.ActionLink("YAZARLAR", "Yazarlar")</li>
-                <li>@Html.ActionLink("GÜNDEM", "Index")</li>
-                <li>@Html.ActionLink("EKONOMİ", "Index")</li>
-                <li>@Html.ActionLink("SPOR", "Index")</li>
-                <li>@Html.ActionLink("EĞİTİM", "Index")</li>
-                <li>@Html.ActionLink("DÜNYA", "Index")</li>
-                <li>@Html.ActionLink("AİLE-SAĞLIK", "Index")</li>
-                <li>@Html.ActionLink("KÜLTÜR", "Index")</li>
-                <li>@Html.ActionLink("POLİTİKA", "Index")</li>
-                <li>@Html.ActionLink("FOTOĞRAF", "Index")</li>
-                <li>@Html.ActionLink("MAGAZİN", "Index")</li>
-            </ul>
+            @Html.Action("AnaMenu", "Home")
         </nav>
     </header>
     <div id="body">

@@ -93,5 +93,17 @@ namespace HaberPortal.Web.Controllers
 
             return PartialView(haberler);
         }
+
+        public ActionResult AnaMenu()
+        {
+            var kategoriler = kategoriServis.Kategoriler();
+            return PartialView(kategoriler);
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+            base.Dispose(disposing);
+        }
     }
 }

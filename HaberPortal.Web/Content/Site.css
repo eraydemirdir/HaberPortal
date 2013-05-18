@@ -4,6 +4,8 @@ header, footer, nav, section {display: block;}
 .gizli {display:none;}
 .gorunur {display:block;}
 .temizle {clear:both;}
+strong {font-weight:bold;}
+a:hover div {text-decoration:underline;}
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
@@ -25,8 +27,9 @@ textarea {min-height: 75px;}
 -----------------------------------------------------------*/
 #header {background-color:#333;}
 #body {overflow:hidden;min-height:500px;}
-#footer {background-color:#000;height:75px;margin-top:10px;}
+#footer {background-color:#000;height:75px;}
 #banner {height:100px;line-height:100px;font-size:40px;font-weight:bold;color:#fff;padding-left:20px;}
+#banner a {color:#fff;}
 
 /* ana menu
 -----------------------------------------------------------*/
@@ -34,8 +37,13 @@ textarea {min-height: 75px;}
 #menu {background-color:#000;}
 #menu ul{padding:0;margin:0;}
 #menu ul li{list-style:none;display:inline-block;}
+#menu ul li.diger {width:70px;text-align:center;}
 #menu ul li a,#menu ul li a:active,#menu ul li a:visited{text-decoration:none;padding:0 5px 0 5px;height:30px;line-height:30px;display:block;color:#fff;font-weight:bold;}
 #menu ul li a:hover{background-color:#666;}
+#menu ul li:hover ul.alt_menu{background-color:#666;display:block;}
+#menu ul li ul.alt_menu {display:none;position:absolute;width:200px;margin-left:-130px;z-index:99;}
+#menu ul li ul.alt_menu li {display:list-item;text-align:left;}
+#menu ul li ul.alt_menu li a:hover{background-color:#000;}
 
 /* ana sayfa
 -----------------------------------------------------------*/
@@ -71,7 +79,7 @@ a.orta_resim_linki .orta_link_text{position:absolute;width:555px;bottom:0;z-inde
 
 .slider {}
 .slider_nav_bar {height:30px;line-height:30px;text-align:center;background-color:#000;}
-.slider_nav_bar .nav_bar_button {width:25px;float:left;border-right:1px solid #fee;}
+.slider_nav_bar .nav_bar_button {width:25px;float:left;border-right:1px solid #ccc;}
 .slider_nav_bar .nav_bar_button a {font-weight:bold;color:#fff;display:block;width:100%;height:100%;}
 .slider_nav_bar .nav_bar_button a:hover {background-color:#666;}
 .slider_nav_bar .nav_bar_button a.aktif {background-color:#666;}
