@@ -23,6 +23,8 @@ namespace HaberPortal.Web
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
             bundles.Add(new StyleBundle("~/Content/Reset/css").Include("~/Content/Reset.css"));
             bundles.Add(new StyleBundle("~/Admin/Content/css").Include("~/Areas/Admin/Content/AdminSite.css"));

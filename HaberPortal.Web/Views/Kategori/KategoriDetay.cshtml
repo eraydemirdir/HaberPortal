@@ -2,5 +2,85 @@
 @{
     ViewBag.Title = "Kategori Detay";
 }
+@{
+    var haberler = Model.Haberler
+        .Where(x => x.HaberTipId == 1);
 
+    var sliderHaberleri = haberler
+        .OrderByDescending(x => x.OlusturmaTarihi)
+        .Take(5);
 
+    var tumHaberler = haberler
+        .OrderByDescending(x => x.OlusturmaTarihi)
+        .Take(20);
+
+    var enCokOkunanlar = haberler
+        .OrderByDescending(x => x.OkunmaSayisi)
+        .Take(10);
+}
+<script src="@Url.Content("~/Scripts/KategoriDetay.js")"></script>
+
+<div class="kategori_detay">
+    <aside class="kategori_detay_sol">
+        <section class="slider">
+            <aside class="slider_navbar">
+                @foreach (var haber in sliderHaberleri)
+                {
+                    <div class="slider_navbar_button">
+                        <a href="@Url.Action("HaberDetay", "Home", new { id = haber.Id })" class="kategori_detay_resim_linki">
+                            <img src="~/@haber.KucukProfilResim" alt="@haber.Baslik" />
+                        </a>
+                    </div>
+                }
+            </aside>
+            <aside class="slider_icerik">
+                @foreach (var haber in sliderHaberleri)
+                {
+                    <div class="slider_resim_tutucu gizli">
+                        <a href="@Url.Action("HaberDetay", "Home", new { id = haber.Id })" class="kategori_detay_resim_linki">
+                            <img src="~/@haber.BuyukProfilResim" />
+                            <div class="kategori_detay_link_text_bg"></div>
+                            <div class="kategori_detay_link_text">
+                                @Html.Raw(haber.Baslik)
+                            </div>
+                        </a>
+                    </div>
+                }
+            </aside>
+        </section>
+        <section class="icerik">
+            <div class="kategoriler">
+                @foreach (var haber in tumHaberler)
+                {
+                    <div class="haber">
+                        <a href="@Url.Action("HaberDetay", "Home", new { id = haber.Id })" class="kategori_haber_link">
+                            <div>
+                                <img src="~/@haber.KucukProfilResim" />
+                            </div>
+                            <div class="haber_baslik">@Html.Raw(haber.Baslik)</div>
+                            <div class="haber_aciklama">@Html.Raw(haber.Aciklama)</div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </section>
+    </aside>
+    <aside class="kategori_detay_sag">
+        <div class="en_cok_okunanlar">
+            <div class="en_cok_okunan_baslik">@Model.Ad.ToUpper() ÇOK OKUNAN</div>
+            @foreach (var haber in enCokOkunanlar)
+            {
+                <div class="en_cok_okunan_haber">
+                    <a href="@Url.Action("HaberDetay", "Home", new { id = haber.Id })" class="en_cok_okunan_link">
+                        <div class="en_cok_okunan_resim">
+                            <img src="~/@haber.KucukProfilResim" />
+                        </div>
+                        <div class="en_cok_okunan_haber_baslik">
+                            @Html.Raw(haber.Baslik)
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </aside>
+</div>

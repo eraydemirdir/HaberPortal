@@ -3,26 +3,26 @@
 }
 
 <script src="@Url.Content("~/Scripts/AnaSayfa.js")"></script>
-<div class="vitrin">
-    <div class="vitrin_sol">
+<section class="vitrin">
+    <aside class="vitrin_sol">
         @Html.Action("VitrinSol")
-    </div>
+    </aside>
     <div class="vitrin_orta">
         @Html.Action("VitrinOrta")
     </div>
-    <div class="vitrin_sag">
+    <aside class="vitrin_sag">
         @Html.Action("VitrinSag")
-    </div>
-</div>
-<div class="icerik">
-    <div class="icerik_sol">
+    </aside>
+</section>
+<section class="icerik">
+    <aside class="icerik_sol">
         <div class="kategori_haberler">
             @Html.Action("KategoriHaberler")
         </div>
-    </div>
-    <div class="icerik_sag">
+    </aside>
+    <aside class="icerik_sag">
         <div class="en_cok_okunanlar">
             @Html.Action("EnCokOkunanHaberler")
         </div>
-    </div>
-</div>
+    </aside>
+</section>
