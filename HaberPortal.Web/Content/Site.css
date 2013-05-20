@@ -1,10 +1,12 @@
 ﻿html {width:100%;text-align:center;}
-body {font-size: .85em;font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;color: #232323;background-color: #fff;width:980px;margin:0 auto;text-align:left;}
+body {font-size: .85em;font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;color: #fff;background-color: #fff;width:980px;margin:0 auto;text-align:left;}
 header, footer, nav, section {display: block;}
 .gizli {display:none;}
 .gorunur {display:block;}
 .temizle {clear:both;}
 strong {font-weight:bold;}
+a,a:link,a:active,a:visited {color:#fff;}
+a:hover {color:#fff;text-decoration:underline;}
 a:hover div {text-decoration:underline;}
 
 /* Styles for basic forms
@@ -30,6 +32,7 @@ textarea {min-height: 75px;}
 #footer {background-color:#000;height:75px;}
 #banner {height:100px;line-height:100px;font-size:40px;font-weight:bold;color:#fff;padding-left:20px;}
 #banner a {color:#fff;}
+#banner a:hover {color:#fff;text-decoration:none;}
 
 /* ana menu
 -----------------------------------------------------------*/

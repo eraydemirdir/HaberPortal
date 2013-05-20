@@ -148,6 +148,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Controllers\UyelikController.cs" />
+    <Compile Include="Controllers\YazarController.cs" />
     <Compile Include="CustomAttributes\ValidateFileAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

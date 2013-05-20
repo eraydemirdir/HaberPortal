@@ -23,9 +23,16 @@ namespace HaberPortal.Core.Services
             return db.Kullanici.SingleOrDefault(x => x.Ad == KullaniciAdi).Id;
         }
 
-        public IEnumerable<Kullanici> Kullanicilar()
+        public List<Kullanici> Kullanicilar()
         {
-            return db.Kullanici;
+            return db.Kullanici.ToList();
+        }
+
+        public List<Kullanici> KullanicilarRolAdinaGore(string rolAdi)
+        {
+            return db.Rol.FirstOrDefault(x => x.Ad == rolAdi)
+                .Kullanicilar
+                .ToList();
         }
 
         public int KullaniciEkle(Kullanici kullanici)

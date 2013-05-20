@@ -11,8 +11,20 @@
 </head>
 <body>
     <header id="header">
+        <nav id="menu">
+            <ul>
+                <li>@Html.ActionLink("Ana Sayfa", "Index", "Home")
+                </li>
+                <li>@Html.ActionLink("Yazarlar", "Yazarlar", "Yazar")
+                </li>
+                <li>@Html.ActionLink("Künye", "Kunye", "Home")
+                </li>
+                <li>@Html.ActionLink("İletişim", "Iletisim", "Home")
+                </li>
+            </ul>
+        </nav>
         <div id="banner">
-            @Html.ActionLink("HABER PORTAL", "Index","Home")
+            @Html.ActionLink("HABER PORTAL", "Index", "Home")
         </div>
         <nav id="menu">
             @Html.Action("AnaMenu", "Home")

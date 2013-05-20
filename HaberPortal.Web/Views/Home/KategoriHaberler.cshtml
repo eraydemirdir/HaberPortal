@@ -7,7 +7,8 @@
         .OrderByDescending(x => x.YayinlanmaTarihi)
         .Take(4);
     <div class="kategoriler">
-        <div class="kategroi_ad">@kategori.Ad.ToUpper()</div>
+        <div class="kategroi_ad">@Html.ActionLink(kategori.Ad.ToUpper(), "KategoriDetay", "Kategori", new { id = kategori.Id }, null)
+        </div>
         @foreach (var haber in haberler)
         {
             <div class="haber">
