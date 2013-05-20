@@ -55,5 +55,13 @@ namespace HaberPortal.Core.Services
 
             return silmeBasarili;
         }
+
+        public void KullaniciyaRollerEkle(int userId, List<Rol> roller)
+        {
+            var kullanici = db.Kullanici.Find(userId);
+            kullanici.Roller.Clear();
+            roller.ForEach(x => kullanici.Roller.Add(db.Rol.Find(x.Id)));
+            db.SaveChanges();
+        }
     }
 }

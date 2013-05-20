@@ -241,6 +241,11 @@
                     field: 'Sil', title: 'Sil', formatter: function (value, row, index) {
                         return '<a href="' + app_root + 'Admin/Kullanici/KullaniciSil?id=' + row.Id + '" class="grid_buton" onclick="return confirm(\'Silmek istediğinize emin misiniz?\')">Sil</a>';
                     }
+                },
+                {
+                    field: 'Roller', title: 'Roller', formatter: function (value, row, index) {
+                        return '<a href="' + app_root + 'Admin/Kullanici/KullaniciRolEkle?id=' + row.Id + '" class="grid_buton">Roller</a>';
+                    }
                 }
         ]]
     });

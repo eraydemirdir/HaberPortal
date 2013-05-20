@@ -144,6 +144,7 @@
     <Compile Include="Areas\Admin\Controllers\YorumController.cs" />
     <Compile Include="Areas\Admin\ViewModels\GaleriViewModel.cs" />
     <Compile Include="Areas\Admin\ViewModels\HaberViewModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\KullaniciRolEkleViewModel.cs" />
     <Compile Include="Areas\Admin\ViewModels\KullaniciViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
@@ -841,6 +842,7 @@
     <Content Include="Content\JqueryEasyUi.1.3.2\themes\metro\validatebox.css" />
     <Content Include="Content\JqueryEasyUi.1.3.2\themes\metro\window.css" />
     <Content Include="Scripts\AnaSayfa.js" />
+    <Content Include="Areas\Admin\Views\Kullanici\KullaniciRolEkle.cshtml" />
     <None Include="Scripts\jquery-2.0.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.0.min.js" />
@@ -885,6 +887,7 @@
     <Content Include="Views\Home\EnCokOkunanHaberler.cshtml" />
     <Content Include="Views\Home\AnaMenu.cshtml" />
     <Content Include="Views\Kategori\KategoriDetay.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\RolViewModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

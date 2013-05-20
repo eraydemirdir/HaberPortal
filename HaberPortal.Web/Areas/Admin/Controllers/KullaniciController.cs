@@ -10,6 +10,7 @@ using System.IO;
 using HaberPortal.Core.Managers;
 using System.Drawing;
 using HaberPortal.Web.Areas.Admin.ViewModels;
+using System.Collections.Generic;
 
 namespace HaberPortal.Web.Areas.Admin.Controllers
 {
@@ -17,11 +18,13 @@ namespace HaberPortal.Web.Areas.Admin.Controllers
     {
         private HaberPortalDbContext db;
         private KullaniciServis kullaniciServis;
+        private RolServis rolServis;
 
         public KullaniciController()
         {
             this.db = new HaberPortalDbContext();
             this.kullaniciServis = new KullaniciServis(db);
+            this.rolServis = new RolServis(db);
         }
 
         //
@@ -170,6 +173,40 @@ namespace HaberPortal.Web.Areas.Admin.Controllers
             };
 
             return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult KullaniciRolEkle(int id)
+        {
+            var kullanici = kullaniciServis.KullaniciBul(id);
+            var roller = rolServis.Roller();
+
+            KullaniciRolViewModel model = new KullaniciRolViewModel();
+            model.KullaniciId = kullanici.Id;
+
+            foreach (var rol in roller)
+            {
+                model.Roller.Add(new RolViewModel
+                {
+                    RoleSahip = kullanici.Roller.Any(r => r.Id == rol.Id),
+                    Id = rol.Id,
+                    RolAdi = rol.Ad
+                });
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult KullaniciRolEkle(KullaniciRolViewModel model)
+        {
+            List<Rol> roller = model.Roller
+                .Where(r => r.RoleSahip)
+                .Select(r => new Rol { Id = r.Id, Ad = r.RolAdi })
+                .ToList();
+
+            rolServis.KullaniciyaRollerEkle(model.KullaniciId, roller);
+
+            return View(model);
         }
 
         protected override void Dispose(bool disposing)
