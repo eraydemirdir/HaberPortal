@@ -1,8 +1,11 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="keywords1" content="Üþçiöðý" />
+    @{string test = "Üþçiöðý";}
+    <meta name="keywords2" content="@test" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/Reset/css")
     @Styles.Render("~/Content/css")
@@ -17,9 +20,9 @@
                 </li>
                 <li>@Html.ActionLink("Yazarlar", "Yazarlar", "Yazar")
                 </li>
-                <li>@Html.ActionLink("KÃ¼nye", "Kunye", "Home")
+                <li>@Html.ActionLink("Künye", "Kunye", "Home")
                 </li>
-                <li>@Html.ActionLink("Ä°letiÅŸim", "Iletisim", "Home")
+                <li>@Html.ActionLink("Ýletiþim", "Iletisim", "Home")
                 </li>
             </ul>
         </nav>

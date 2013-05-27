@@ -37,7 +37,6 @@ namespace HaberPortal.Web.Areas.Admin.Controllers
         {
             try
             {
-                kategoriServis.KategoriVarmi(kategori.Ad);
                 kategoriServis.KategoriEkle(kategori);
 
                 return RedirectToAction("Kategoriler");
@@ -48,6 +47,12 @@ namespace HaberPortal.Web.Areas.Admin.Controllers
             }
 
             return View(kategori);
+        }
+
+        public JsonResult KategoriVarmi(string kategoriAd)
+        {
+            var result = kategoriServis.KategoriVarmi(kategoriAd);
+            return Json(result, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult KategoriDuzenle(int id)

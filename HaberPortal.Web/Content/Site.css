@@ -139,7 +139,7 @@ a.kategori_haber_link .haber_aciklama {padding:0 0 5px 0;height:70px;overflow:hi
 .kategori_detay .slider_icerik{width:630px;float:right;}
 
 .kategori_detay .slider_navbar_button{display:block;height:70px;margin-bottom:5px;}
-.kategori_detay .kategori_detay_resim_linki {display:block;}
+.kategori_detay .kategori_detay_resim_linki {display:block;height:100%;}
 .kategori_detay .slider_navbar_button .kategori_detay_resim_linki:hover {border-left:7px solid #000;height:70px;}
 .kategori_detay .slider_icerik .kategori_detay_resim_linki {position:relative;height:370px;}
 .kategori_detay .kategori_detay_resim_linki img {width:100%;height:100%;}
