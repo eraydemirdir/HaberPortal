@@ -1,0 +1,7 @@
+﻿@model HaberPortal.Web.Areas.Admin.ViewModels.RolViewModel
+
+@Html.CheckBoxFor(m => m.RoleSahip, new { onclick="this.form.submit();"})
+@Html.HiddenFor(m => m.Id)
+@Html.HiddenFor(m => m.RolAdi)
+@Html.LabelFor(m => m.RoleSahip, Model.RolAdi)
+<br />

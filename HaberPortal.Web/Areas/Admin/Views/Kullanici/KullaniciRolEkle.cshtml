@@ -1,0 +1,19 @@
+﻿@model HaberPortal.Web.Areas.Admin.ViewModels.KullaniciRolViewModel
+@{
+    ViewBag.Title = "Kullanici Rol Ekle";
+}
+
+<div>
+    @using (Html.BeginForm())
+    {
+        <div class="editor-field">
+            @Html.HiddenFor(x => Model.KullaniciId)
+            @Html.EditorFor(x => Model.Roller)
+        </div>
+    }
+</div>
+<div>
+    <div class="display-field">
+        @Html.ActionLink("Listeye Geri Dön", "Kullanicilar", "Kullanici", new { area = "Admin" }, new { @class = "gray_gradient" })
+    </div>
+</div>
